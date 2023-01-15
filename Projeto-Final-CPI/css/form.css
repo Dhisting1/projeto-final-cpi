@@ -19,7 +19,7 @@
     background: radial-gradient(circle, rgba(186,36,236,1) 2%, rgba(101,46,121,1) 100%);
     border-radius: 30px;
     backdrop-filter: blur(10px);
-    box-shadow: 14px 14px 14px #8f8d8d;
+    
 }
 .formbox h2{
     margin-bottom: -10px;
@@ -82,7 +82,7 @@ button{
     font-size: .8em;
 }
 button:hover{
-    background: #ff3822;
+    background: #b891cb;
 }
 @media screen and (min-width: 15.75em){
     form > div input{
