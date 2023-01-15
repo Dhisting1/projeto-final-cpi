@@ -234,7 +234,8 @@ h1,h2,h3,h4,h5,h6{
 
 /* Parte de responsividade */
 
-@media screen and (min-width: 38.75em){ /*Multiplicar esse valor por x16 que dara o resultado em pixels*/
+/*Multiplicar esse valor por x16 que dara o resultado em pixels*/
+@media screen and (min-width: 38.75em){ 
     /* Menu */
     .top-content{
         background: #521a66;
