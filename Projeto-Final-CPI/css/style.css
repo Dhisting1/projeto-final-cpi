@@ -1,0 +1,237 @@
+/* Para aceitar acentos especiais no css */
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Mukta', sans-serif; 
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+/*  Classes   */
+
+/*Limpador de container*/
+.clearfix::after, .row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*  Formatação do Menu*/
+.top-header{
+    text-align: center;
+}
+.top-header-logo{
+    margin: .5em;
+    align-items: center;
+}
+.top-nav{
+    background: #612674;
+    text-align: center;
+}
+.top-nav ul{
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+}
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+.top-nav a:hover{
+    background: #7c3792;
+}
+
+/* Titulo e subtitulo */
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background: #f6f6f6;
+}
+.top-title{
+    color: #612674;
+    font-size: 2.37em;
+    margin: 1.37em;
+}
+.top-sub-title{
+    color: #a87bb7;
+    font-size: 1.34em;
+    line-height: 1.5;
+}
+/* Conteudo Principal */
+.main-content{
+    padding: 2em;
+}
+.main-article{
+    margin-bottom: 3.5em;
+}
+.main-content p{
+    line-height: 1.5;
+}
+.main-title{
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #652e79;
+    font-weight: 800;
+}
+
+/* Conteudo secundario */
+
+.middle-content{
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}
+.middle-title{
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+}
+.middle-content p{
+    line-height: 1.5;
+    color: #222222;
+}
+/* Formatação dos icones */
+.middle-content span[class^=icon]{
+    font-size: 4em;
+    color: #652e79;
+}
+/* Formatação do link para parecer um botão */
+.button{
+    display: inline-block;
+    padding: 1em 1.5em;
+    background: #1A6DFF;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.button:hover{
+    background: #C822FF;
+}
+.icon-play{
+    height: 5em;
+    display: none;
+}
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Formatação do footer */
+.footer{
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.footer-menudown{
+    background: #303d4c;
+    padding: .5em;
+}
+.footer-menudown li{
+    display: inline-block;
+    margin: 0 1em;
+}
+.footer-menudown a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+.footer-menudown a[class^=icon]:hover{
+    color: #1A6DFF;
+}
+/* Classe hidden para esconder o texto do link */
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+/* Parte de responsividade */
+
+@media screen and (min-width: 38.75em){ /*Multiplicar esse valor por x16 que dara o resultado em pixels*/
+    /* Menu */
+    .top-content{
+        background: #521a66;
+        color: white;
+    }
+    .top-header-logo{
+        float: left;
+    }
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 60px;
+    }
+    .top-nav ul{
+        margin: 0;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: #521a66;
+        font-weight: 800;
+    }
+    .top-nav a:hover{
+        background: #e7d9fc;
+    }
+    /* titulo e subtitulo */
+    .top-title, .top-sub-title{
+        color: white;
+    }
+    /* Elementos em grid */
+    .col-1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+    .main-article .button{
+        float: right;
+    }
+    .icon-play{
+        display: block;
+    }
+}
+@media screen and (min-width: 62.5em){
+    .top-content{
+        background: #521a66 url(../img/bg_topo_1198x670.jpg);
+        background-position: center top;
+        height: 30em;
+        /* padding-top: 7em; */
+    }
+    .top-title{
+        padding-bottom: -100px;
+    }
+    .top-title, .top-sub-title{
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 72em){
+    .top-content{
+        background-image: url(../img/bg_topo_1600x1374.jpg);
+        padding: 19em 15em 10em;
+        background-position: center top;
+    }
+    .col-1-4{
+        width: 23%;
+        margin: 1%;
+    }
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+    .main-article .button{
+        float: none;
+    }
+    .icon-play{
+        height: 7em;
+    }
+}
