@@ -42,7 +42,9 @@ h1,h2,h3,h4,h5,h6{
 .top-nav a:hover{
     background: #7c3792;
 }
-
+.main-img{
+    max-width: 100%;
+}
 /* Titulo e subtitulo */
 .top-content{
     padding: 1em;
@@ -69,6 +71,9 @@ h1,h2,h3,h4,h5,h6{
 .main-content p{
     line-height: 1.5;
 }
+.main-p{
+    text-align: justify;
+}
 .main-title{
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -88,6 +93,7 @@ h1,h2,h3,h4,h5,h6{
     color: #652e79;
     text-transform: uppercase;
 }
+
 .middle-content p{
     line-height: 1.5;
     color: #222222;
@@ -150,6 +156,7 @@ h1,h2,h3,h4,h5,h6{
     display: block;
 }
 
+
 /* Parte de responsividade */
 
 @media screen and (min-width: 38.75em){ /*Multiplicar esse valor por x16 que dara o resultado em pixels*/
@@ -197,6 +204,7 @@ h1,h2,h3,h4,h5,h6{
     .icon-play{
         display: block;
     }
+    
 }
 @media screen and (min-width: 62.5em){ /* 1000 / 16 */
     
@@ -205,6 +213,10 @@ h1,h2,h3,h4,h5,h6{
         background-position: center bottom;
         height: 20em;
         padding-top: 17em;  
+    }
+    .main-p{
+        display: inline-block;
+        padding-right: 60px;
     }
 }
 
@@ -229,6 +241,13 @@ h1,h2,h3,h4,h5,h6{
     .icon-play{
         height: 7em;
     }
+    .main-p{
+        display: inline-block;
+        padding-right: 60px;   
+    }
+    .main-img{
+        max-width: 90%;
+    }
 }
 @media screen and (min-width: 120em){
     .top-content{
@@ -251,4 +270,5 @@ h1,h2,h3,h4,h5,h6{
     .icon-play{
         height: 7em;
     }
+    
 }
