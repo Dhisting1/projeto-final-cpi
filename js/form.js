@@ -5,6 +5,6 @@ function soneca(ms){
 //  Função assincrona notif() verifica se o campo do formulario foi preenchido ou não
 async function notif() {
     let btn = document.getElementById("btn")
-    await soneca(200)
+    await soneca(50)
     btn.textContent = alert("Preencher os campos antes de enviar!!")  
 }
