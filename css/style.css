@@ -169,18 +169,20 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* CARDS */
+
 #container{
-    width: 1150px;
+    max-width: 80%;
     padding: 20px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 #container .card{
-    position: relative;
+    display: inline-block;
     padding: 10px;
     width: 300px;
     background-color: #ffffff;
@@ -192,13 +194,18 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
 }
 
-
+#container .invictus-card{
+    /* background: red; */
+    padding-bottom: 28%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
 #container .card .img-card{
     transition: 0.5s;
 }
-
 .img-card{
-    max-width: 100%;
+    width: 100%;
 }
 
 .card-content{
@@ -280,9 +287,9 @@ h1,h2,h3,h4,h5,h6{
     .icon-play{
         display: block;
     }
-    
+        
 }
-@media screen and (min-width: 62.5em){ /* 1000 / 16 */
+@media screen and (min-width: 64em){ /* 1000 / 16 */
     
     .top-content{
         background: #521a66 url(../images/bg_topo_1198x670.jpg);
